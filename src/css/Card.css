@@ -71,6 +71,20 @@
     user-select: none;
 }
 
+
+.Card .thumbnail .img-wrapper img {
+    transition: 0.4s;
+    filter: saturate(0.5);
+    width: 100%;
+    user-select: none;
+}
+
+.Card:hover .thumbnail .img-wrapper img {
+    transition: 0.4s;
+    filter: saturate(0.8);
+}
+
+
 @media screen and (max-width: 500px){
     .Card:hover {
         transition: 0.3s;
