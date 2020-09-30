@@ -74,14 +74,14 @@
 
 .Card .thumbnail .img-wrapper img {
     transition: 0.4s;
-    filter: saturate(0.5);
+    filter: saturate(0.3);
     width: 100%;
     user-select: none;
 }
 
 .Card:hover .thumbnail .img-wrapper img {
     transition: 0.4s;
-    filter: saturate(0.8);
+    filter: saturate(0.9);
 }
 
 
