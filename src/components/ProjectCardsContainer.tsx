@@ -12,7 +12,7 @@ export default class ProjectCardsContainer extends React.Component<Props> {
     return (
       <div className="ProjectCardsContainer">
         {this.props.projects.map((projectComp, i) =>
-          <ProjectCard key={i} title={projectComp.title} url={"/projects/" + projectComp.title} />
+          <ProjectCard key={i} title={projectComp.title} url={"/projects/" + projectComp.title} thumbnail={projectComp.thumbnail} />
         )}
       </div>
     );

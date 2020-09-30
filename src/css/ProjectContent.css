@@ -1,0 +1,40 @@
+.ProjectContent {
+    text-align: left;
+}
+
+.ProjectContent .page-title {
+    text-align: center;
+}
+
+
+.ProjectContent .page-content-margined {
+    max-width: calc(var(--main-content-max-width) - 300px);
+}
+
+.ProjectContent ul {
+    display: grid;
+}
+
+.ProjectContent li {
+    list-style: circle; 
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.ProjectContent img {
+    float: right;
+    width: 50%;
+    margin: 50px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 500px){
+    .ProjectContent img {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+}
+
