@@ -1,0 +1,78 @@
+.App {
+  --color-text: black;
+  --color-text-navbar: rgb(255, 255, 255);
+  --color-background: rgb(248, 248, 248);
+  --color-primary: rgb(52, 154, 171);
+  --color-primary-hover: rgb(56, 146, 161);
+  --color-primary-dark: rgb(53, 131, 144);
+  --color-secondary: rgb(212, 130, 106);
+  --color-secondary-hover:  rgb(150, 93, 73);
+  --color-secondary-dark: rgb(134, 84, 68);
+  --font-size: 14px;
+  --main-content-max-width: 1300px;
+}
+
+.App.dark {
+  --color-text: rgb(230, 230, 230);
+  --color-text-navbar: rgb(230, 230, 230);
+  --color-background: rgb(39, 39, 39);
+  --color-primary: rgb(53, 55, 58);
+  --color-primary-dark: rgb(27, 28, 29);
+}
+
+.App {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height:100%;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+}
+
+.Content {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+h1 {
+  margin-block-end: 1em;
+}
+
+.content-wrapper-centered {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 5%;
+}
+
+.page-content-margined {
+  width: 100%;
+  max-width: var(--main-content-max-width);
+  margin-bottom: 100px;
+}
+
+.dark a {
+  color: rgb(100, 100, 146);
+}

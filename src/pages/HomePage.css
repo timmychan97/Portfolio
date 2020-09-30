@@ -1,0 +1,71 @@
+.HomePage {
+    overflow: hidden;
+}
+
+
+.HomePage .page-title {
+    margin-top: 120px;
+    text-align: left;
+    font-size: 3.3em;
+    font-weight: lighter;
+}
+
+
+.HomePage a {
+    transition: 0.3s;
+    outline: none;
+    display: inline;
+    padding: 20px 40px;
+    background-color:rgba(0,0,0,0.45);
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.7);
+    border: none;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    white-space: nowrap;
+    user-select: none;
+    margin: 50px 0 0 0;
+}
+
+.HomePage a:hover {
+    transition: 0.4s;
+    font-size: 25px;
+    background-color:rgba(0, 0, 0, 0.39);
+    box-shadow: 4px 7px 15px rgba(0,0,0,0.7);
+    padding: 22px 40px;
+}
+.HomePage a:active {
+    transition: 0.2s ;
+    box-shadow: 4px 7px 15px rgba(0,0,0,0.7);
+    background-color:rgba(0,0,0,0.45);
+}
+.HomePage a.activated {
+    transition: 0.5s;
+    font-size: 25px;
+    color: #ffffff57;
+    background:none;
+    box-shadow: none;
+    margin-bottom: 100px;
+}
+.HomePage a.activated:hover {
+    transition: 0.5s;
+    font-size: 25px;
+    color: white;
+    background-color:rgba(0,0,0,0.3);
+    box-shadow: 4px 7px 15px rgba(0,0,0,0.7);
+    padding: 22px 40px;
+}
+
+
+.HomePage .description {
+    text-align: left;
+    width: max(40%, 400px);
+    max-width: 100%;
+}
+
+.HomePage .description p {
+    text-align: left;
+    font-size: larger;
+    line-height: 1.75em;
+    margin-bottom: 70px;
+}

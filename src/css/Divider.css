@@ -1,0 +1,10 @@
+.Divider {
+    border-width: 1px;
+    border-style: solid;
+    width: 80%;
+    height: 2px;
+    margin: 40px auto;
+    background-color: rgb(212 130 106);
+    border-color: rgb(187 155 81 / 29%);
+    border-radius: 50%;
+}

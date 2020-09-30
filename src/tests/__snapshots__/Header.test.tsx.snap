@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+<div
+  class="Header"
+>
+  <div
+    class="site-logo"
+  >
+    <a
+      href="/"
+    >
+      WebGallery
+    </a>
+  </div>
+  <nav
+    class="navigation-bar"
+  >
+    <ul
+      class="menu"
+    >
+      <li>
+        <a
+          href="/Home"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/Gallery"
+        >
+          Gallery
+        </a>
+      </li>
+      <li>
+        <a
+          href="/About Us"
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="/Settings"
+        >
+          Settings
+        </a>
+      </li>
+    </ul>
+    <div
+      class="burger"
+    >
+      <span />
+      <span />
+      <span />
+      <span />
+    </div>
+  </nav>
+</div>
+`;

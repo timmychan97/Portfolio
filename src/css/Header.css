@@ -1,0 +1,192 @@
+.Header {
+  transition: 0.4s;
+  position: relative;
+  height: 100px;
+  width: min(100%, var(--main-content-max-width));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.site-logo {
+  justify-self: left;
+  font-size: 25px;
+  font-family: 'Ubuntu', 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+}
+
+.site-logo a {
+  display: flex;
+  transition: 0.3s;
+  padding: 20px;
+  font-size: 25px;
+  color: var(--color-text-navbar);
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.site-logo a:hover {
+  transition: 0.3s;
+  transform: translateY(1px) scale(1.1);
+}
+
+.Header .navigation-bar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.Header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  z-index: 1;
+}
+
+.Header .menu a {
+  box-sizing: border-box;
+  transition: 0.3s;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--color-text-navbar);
+  border-bottom: 2px solid #ffffff00;
+  margin-top: 2px;  /* Compensate the size of the border */
+}
+
+.Header .menu a:focus {
+  box-shadow: none;
+  border: none;
+  background-color: none;
+}
+
+.Header .menu a:hover {
+  transition: 0.3s;
+  /* font-size: 1.1em; */
+  transform: translateY(5px) scale(1.1);
+  text-shadow: 2px 2px 7px #00000095;
+}
+
+.Header .menu a:active {
+  transition: 0.3s;
+  transform: translateY(8px) scale(1.05);
+  text-shadow: 2px 2px 7px #000000FF;
+}
+
+.Header .menu a.active {  
+  border-bottom: 2px solid #ffffffff;
+}
+
+.Header .menu li {
+  display: flex;
+}
+
+
+/* Burger Inspired by https://codepen.io/designcouch/pen/Atyop */
+.burger {
+  display: none;
+  width: 30px;
+  height: 27px;
+  position: relative;
+  transform: rotate(0deg);
+  margin-right: 5px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.burger:hover {
+  transform: scale(1.2);
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+  top: 0px;
+}
+
+.burger span:nth-child(2),.burger span:nth-child(3) {
+  top: 12px;
+}
+
+.burger span:nth-child(4) {
+  top: 24px;
+}
+
+.burger.open span:nth-child(1), .burger.open span:nth-child(4) {
+  top: 12px;
+  width: 0%;
+  left: 50%;
+}
+
+.burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 700px){
+  .Header {
+    transition: 0.4s;
+    height: 65px;
+  }
+  .site-logo a {
+    transition: 0.4s;
+    padding-left: 5px;
+  }
+  
+  .Header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 95%;
+    margin: 0 2.5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background: var(--color-primary-dark);
+
+    transition: 0.5s;
+    height: 0px;
+    overflow: hidden;
+  }
+  .Header .menu li {
+    width: 80%;
+  }
+  .Header .menu a {
+    width: 100%;
+  }
+  
+  .Header .menu a.active {
+    background-color: #00000026;
+    border-bottom: 2px solid #ffffff00;
+    border-left: 2px solid #ffffffff;
+  }
+
+  .Header .menu.open {
+    transition: 0.5s;
+    height: 300px;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+

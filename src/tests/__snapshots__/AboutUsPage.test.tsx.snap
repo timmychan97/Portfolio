@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutUsPage matches snapshot 1`] = `
+<div
+  class="content-wrapper-centered"
+>
+  <div
+    class="page-content-margined"
+  >
+    <h1
+      class="page-title"
+    >
+      About Us
+    </h1>
+    <hr
+      class="Divider"
+    />
+    <p>
+      We are an asian team of two.
+    </p>
+    <p>
+      Chinese with passion and ambition.
+    </p>
+    <p>
+      Working all day for date of due.
+    </p>
+    <p>
+      Adding all fashion for submission.
+    </p>
+    <br />
+    <p>
+      We spent tremendous amount of time on making this site. Make sure you enjoy it and feel free to show this site to other people. Contact us by Fax at +44 161 999 8888. All the content is made by us. Don't you ever steal them.
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+.Footer {
+    color: rgba(221, 221, 221, 0.89);
+    flex-shrink: 0;
+    background-color: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.75em;
+    padding: 0px 20px;
+}
+
+.Footer .content-wrapper {
+    width: 100%;
+    max-width: var(--main-content-max-width);
+    text-align: right;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,166 @@
+.ArtPropertyPanel {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+    min-height: 100px;
+}
+.ArtPropertyPanel .property-list {
+    position: relative;
+    transition: 0.5s;
+    background-color: var(--color-background);
+    padding: 20px max(5vw, 30px) 20px calc(20px + 3vw);
+    white-space: nowrap;
+    box-sizing: border-box;
+    pointer-events: all;
+    max-width: 95vw;
+}
+
+.ArtPropertyPanel .property-list.collapse {
+    transition: 0.5s;
+    padding-left: 100px;
+    transform: translateX(101%);
+}
+
+.ArtPropertyPanel .rightToggle {
+    transition: 0.5s;
+    width: max(4vw, 40px);
+    z-index: 2;
+    background-color: var(--color-primary-dark);
+    pointer-events: all;
+    display: flex;
+    cursor: pointer;
+}
+.ArtPropertyPanel .rightToggle:hover {
+    transition: 0.1s;
+    background-color: var(--color-primary-hover);
+}
+.ArtPropertyPanel .rightToggle.collapse {
+    transition: 0.5s;
+    width: max(3vw, 8px);
+}
+.App.dark .ArtPropertyPanel .rightToggle{
+    transition: 0.1s;
+    background-color: var(--color-secondary-dark);
+}
+.App.dark .ArtPropertyPanel .rightToggle:hover{
+    transition: 0.1s;
+    background-color: var(--color-secondary-hover);
+}
+.ArtPropertyPanel .rightToggle .arrow-icon {
+    transition: 0.5s;
+    position: relative;
+    transform: scaleX(-1);
+}
+.ArtPropertyPanel .rightToggle .arrow-icon span {
+    transition: 0.5s;
+    background-color: var(--color-background);
+}
+.App.dark .ArtPropertyPanel .rightToggle .arrow-icon span {
+    transition: 0.5s;
+    background-color: var(--color-primary-dark);
+}
+.ArtPropertyPanel .rightToggle.collapse .arrow-icon span {
+    transition: 0.5s;
+    background-color: #00000000;
+}
+.ArtPropertyPanel .rightToggle .icon-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    overflow-x: visible;
+}
+
+
+
+.property-list .leftToggle {
+    transition: 0.1s;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 30px;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    border-right: 2px dashed  var(--color-primary-dark);
+    cursor: pointer;
+}
+
+.property-list .leftToggle:hover {
+    transition: 0.1s;
+    background-color: #88888833;
+}
+
+.property-list .leftToggle.collapse {
+    transition: 0.5s;
+    width: max(3vw, 8px);
+}
+
+.App.dark .ArtPropertyPanel .leftToggle {
+    transition: 0.1s;
+    background-color: var(--color-secondary-dark);
+    border-right: none;
+}
+
+.App.dark .ArtPropertyPanel .leftToggle:hover {
+    transition: 0.1s;
+    background-color: var(--color-secondary-hover);
+}
+
+.arrow-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.arrow-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+}
+
+.arrow-icon span:nth-child(1) {
+    margin-bottom: 27px;
+    transform: rotate(70deg);
+}
+
+.arrow-icon span:nth-child(2) {
+    margin-top: 27px;
+    transform: rotate(-70deg);
+}
+
+
+
+
+.ArtPropertyPanel ul {
+    padding: 0;
+    padding-left: 10px;
+    margin: 4px 0px;
+}
+.ArtPropertyPanel li {
+    display: flex;
+}
+
+/* Add gap between li elements */
+.ArtPropertyPanel li + li {
+    margin-top: 10px;
+}
+
+.ArtPropertyPanel li label {
+    flex-grow: 1;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.ArtPropertyPanel li input {
+    width: 100px;
+    max-width: 30vw;
+}

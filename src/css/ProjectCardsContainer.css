@@ -1,0 +1,14 @@
+.ProjectCardsContainer {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+
+@media screen and (max-width: 500px){
+    .ProjectCardsContainer {
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}

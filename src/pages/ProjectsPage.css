@@ -1,0 +1,4 @@
+.gallery-menu {
+    min-height: 400px;
+    max-width: var(--main-content-max-width);
+}

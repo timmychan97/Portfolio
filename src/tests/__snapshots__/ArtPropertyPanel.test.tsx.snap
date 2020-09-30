@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Properties matches snapshot 1`] = `
+<div
+  class="ArtPropertyPanel"
+>
+  <div
+    class="property-list"
+  >
+    <div
+      class="leftToggle"
+    >
+      <div
+        class="arrow-icon"
+      >
+        <span />
+        <span />
+      </div>
+    </div>
+    <ul>
+      <li>
+        <label
+          for="X"
+        >
+          X:
+        </label>
+        <input
+          name="X"
+          type="text"
+          value="200"
+        />
+      </li>
+      <li>
+        <label
+          for="Y"
+        >
+          Y:
+        </label>
+        <input
+          name="Y"
+          type="text"
+          value="620"
+        />
+      </li>
+      <li>
+        <label
+          for="Hello world"
+        >
+          Hello world:
+        </label>
+        <input
+          name="Hello world"
+          type="text"
+          value="world hello"
+        />
+      </li>
+      <li>
+        <label
+          for="I am a test"
+        >
+          I am a test:
+        </label>
+        <input
+          name="I am a test"
+          type="text"
+          value="7812&T%/fds1  1"
+        />
+      </li>
+    </ul>
+  </div>
+  <div
+    class="rightToggle collapse"
+  >
+    <div
+      class="icon-wrapper"
+    >
+      <div
+        class="arrow-icon"
+      >
+        <span />
+        <span />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Properties matches snapshot 2`] = `
+<div
+  class="ArtPropertyPanel"
+>
+  <div
+    class="property-list"
+  >
+    <div
+      class="leftToggle"
+    >
+      <div
+        class="arrow-icon"
+      >
+        <span />
+        <span />
+      </div>
+    </div>
+    <ul>
+      <li>
+        <label
+          for="Xf2"
+        >
+          Xf2:
+        </label>
+        <input
+          name="Xf2"
+          type="text"
+          value="200"
+        />
+      </li>
+      <li>
+        <label
+          for="ag23Y"
+        >
+          ag23Y:
+        </label>
+        <input
+          name="ag23Y"
+          type="text"
+          value="62fs0"
+        />
+      </li>
+      <li>
+        <label
+          for="Hellogrg world"
+        >
+          Hellogrg world:
+        </label>
+        <input
+          name="Hellogrg world"
+          type="text"
+          value="worl1d hello   "
+        />
+      </li>
+      <li>
+        <label
+          for="%&/fd"
+        >
+          %&/fd:
+        </label>
+        <input
+          name="%&/fd"
+          type="text"
+          value="£$24279yhnuf"
+        />
+      </li>
+    </ul>
+  </div>
+  <div
+    class="rightToggle collapse"
+  >
+    <div
+      class="icon-wrapper"
+    >
+      <div
+        class="arrow-icon"
+      >
+        <span />
+        <span />
+      </div>
+    </div>
+  </div>
+</div>
+`;

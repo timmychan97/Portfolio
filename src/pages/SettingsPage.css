@@ -1,0 +1,20 @@
+.settings-panel > * {
+    font-size: 1.2em;
+}
+
+.settings-panel label {
+    margin-right: 12px;
+}
+
+.settings-panel select {
+    transition: 0.1s;
+    padding: 5px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid;
+}
+
+.settings-panel select:hover {
+    transition: 0.1s;
+    background-color: rgb(231, 231, 231);
+}
