@@ -18,7 +18,7 @@ export default class Project_DefendyPengy extends React.Component {
         </p>
         <p>
 
-          I worked as a Graphic Designer and a Developer. I created the base of the project, providing support for SteamVR, and set up all the crucial parts for the team to build their work upon. Then I worked the gameplay, creating GameController, teleportation and a MagicBook weapon. For my role as a Graphic Designer, I served as the man in the middle between the graphics and developer team. Such as a role was needed as the graphics team needed to know what had to be made, and how they needed to make it for it to work as intended in game. Furthermore, I was in charge of the level design, and created the logo.
+          I worked as a Graphic Designer and a Developer. I created the base of the project, providing support for SteamVR, and set up all the crucial parts for the team to build their work upon. Then I worked the gameplay, creating GameController, teleportation and a MagicBook weapon. For my role as a Graphic Designer, I served as the man in the middle between the graphics and developer team. Such as a role was needed as the graphics team needed to know what had to be made, and how they needed to make it for it to work as intended in game. Furthermore, I was in charge of the level design and art.
         </p>
 
 
