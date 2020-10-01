@@ -47,3 +47,7 @@
 h3 {
     margin-block-start: 2.5em;
 }
+
+.ProjectContent p {
+    line-height: 1.5em;
+}
