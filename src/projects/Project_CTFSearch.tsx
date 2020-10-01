@@ -4,8 +4,6 @@ import ProjectContent from '../components/ProjectContent';
 
 export default class Project_CTFSearch extends React.Component {
   static title = "CTF Search";
-  static imgPath = "/img/project/CTFSearch/";
-  static thumbnail = Project_CTFSearch.imgPath + "thumbnail.png";
 
   render() {
     return (

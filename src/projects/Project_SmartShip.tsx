@@ -2,11 +2,11 @@ import React from 'react';
 import Divider from '../components/Divider';
 import ProjectContent from '../components/ProjectContent';
 import { RefLink } from '../components/RefLink';
+import { ProjectUtils } from './ProjectUtils';
 
 export default class Project_SmartShip extends React.Component {
   static title = "SmartShip";
-  static thumbnail = "img/project/SmartShip/thumbnail.png";
-  imgPath = "/img/project/SmartShip/";
+  imgPath = ProjectUtils.getImgPath(Project_SmartShip);
 
   render() {
     return (
