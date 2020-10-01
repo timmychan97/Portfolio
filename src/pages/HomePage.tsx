@@ -10,9 +10,9 @@ export default function HomePage() {
         <div className="description">
           <p>
             Full stack developer with expertise in Web Development,
-            Back End, design, 3D Systems and Management. Held multiple workshops and courses
-            at NTNU for students from different studies.
-            Loves to work on projects outside of school.
+            Back End, design, 3D Systems and Management. Held multiple
+            workshops and courses for students from different studies
+            at NTNU. Loves to work on projects outside of school.
           </p>
           <Link to="/Projects">Explore Projects</Link>
         </div>
