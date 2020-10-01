@@ -4,12 +4,19 @@
     border-left: 3px solid lightgray;
     margin: 60px 40px;
     padding: 0px 30px;
+    padding-bottom: 1em;
     line-height: 1.8em;
     color: rgb(41, 41, 41);
     width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background: #00000006;
+}
+
+.App.dark .Quote {
+    color: rgb(201, 201, 201);
+    background: #0000002f;
 }
 
 .Quote p {
@@ -24,3 +31,9 @@
     margin: 0 10px;
 }
 
+
+@media screen and (max-width: 400px){
+    .Quote {
+        margin: 40px 6%;
+    }
+}
